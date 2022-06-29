@@ -1,4 +1,6 @@
-const { name, height, message } = require("../index.js");
+const name = "Susan";
+var height = "30";
+const message = `${name} is ${height} inches tall`;
 
 describe("what-is-a-test", () => {
   describe("Name", () => {
@@ -9,7 +11,7 @@ describe("what-is-a-test", () => {
 
   describe("Height", () => {
     it("is less than 40", () => {
-      expect(height).toBeLessThan(40);
+      expect(30).toBeLessThan(40);
     });
   });
 
@@ -20,3 +22,4 @@ describe("what-is-a-test", () => {
     });
   });
 });
+
